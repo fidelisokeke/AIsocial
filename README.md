@@ -7,6 +7,61 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+# AIsocial Backend API
+
+This is the backend API service for the AIsocial platform, built with Laravel. This service exposes RESTful endpoints that are consumed by our React TypeScript frontend application.
+
+## Project Overview
+
+This Laravel application serves as the backend API, providing:
+- RESTful API endpoints
+- Database management
+- Authentication services
+- Business logic implementation
+
+The frontend application, built with React and TypeScript, consumes these endpoints to create a complete social media experience.
+
+## Setup Instructions
+
+### Prerequisites
+- PHP >= 8.1
+- Composer
+- MySQL/PostgreSQL
+- Node.js (for running the frontend)
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/fidelisokeke/AIsocial.git
+cd AIsocial
+```
+
+2. Install PHP dependencies:
+```bash
+composer install
+```
+
+3. Set up environment variables:
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+4. Configure your database in the .env file
+
+5. Run migrations:
+```bash
+php artisan migrate
+```
+
+6. Start the development server:
+```bash
+php artisan serve
+```
+
+The API will be available at `http://localhost:8000`.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
@@ -59,3 +114,14 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## API Documentation
+
+The API endpoints are documented using OpenAPI/Swagger. Once the server is running, you can access the documentation at:
+```
+http://localhost:8000/api/documentation
+```
+
+## Frontend Repository
+
+The frontend React TypeScript application that consumes these APIs can be found in a separate repository. Please refer to the frontend repository for instructions on setting up the complete application.
