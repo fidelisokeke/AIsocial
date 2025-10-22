@@ -9,7 +9,7 @@
 
 # AIsocial Backend API
 
-This is the backend API service for the AIsocial platform, built with Laravel. This service exposes RESTful endpoints that are consumed by our React TypeScript frontend application.
+This is the backend API service for the AIsocial platform, built with Laravel. This service exposes RESTful endpoints that are consumed by the React TypeScript frontend application: https://github.com/fidelisokeke/AiSocialfrontend.git .
 
 ## Project Overview
 
